@@ -6,7 +6,6 @@
   font-size: 18px;
   line-height: 19px;
   font-weight: normal;
-  color: red;
 
   display: flex;
   justify-content: space-between;
@@ -14,17 +13,26 @@
 }
 
 .header__logo {
-  background-color: blueviolet;
+  font-family: $font-third;
   display: flex;
   align-items: flex-end;
+  color: #dc0000;
 }
 
 .header__logo-title {
-  text-transform: uppercase;
+  font-size: 49px;
+  line-height: 19px;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.header__logo-text {
+  font-size: 36px;
+  line-height: 3px;
+  font-weight: 400;
 }
 
 .header__menu {
-  background-color: brown;
   display: flex;
   align-items: center;
 }
@@ -34,7 +42,7 @@
   list-style: none;
   margin: 0;
     & .header__menu-item:not(:last-child) {
-      margin-right: 70px;
+      margin-right: 75px;
     }
 }
 
@@ -42,5 +50,15 @@
   & a {
     text-decoration: none;
     color: #ffffff;
+  }
+
+  & :hover {
+    color: #dc0000;
+    border-bottom: 1px solid #dc0000;
+  }
+
+  & :active {
+    color: #660909;
+    border-bottom: 1px solid #660909;
   }
 }
