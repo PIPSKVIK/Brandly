@@ -1,11 +1,10 @@
 .header {
-  width: 1170px;
-  margin: 0 auto;
+  @include wrap;
 
   font-family: $font-main;
   font-size: 18px;
   line-height: 19px;
-  font-weight: normal;
+  font-weight: medium;
 
   display: flex;
   justify-content: space-between;
@@ -15,21 +14,22 @@
 .header__logo {
   font-family: $font-third;
   display: flex;
-  align-items: flex-end;
-  color: #dc0000;
+  align-items: center;
+  color: $red;
 }
 
 .header__logo-title {
   font-size: 49px;
-  line-height: 19px;
+  line-height: 1;
   font-weight: 700;
-  margin-right: 5px;
+  margin: 0 5px 0 0;
 }
 
 .header__logo-text {
   font-size: 36px;
-  line-height: 3px;
+  line-height: 0.9;
   font-weight: 400;
+  margin: 0;
 }
 
 .header__menu {
@@ -41,24 +41,23 @@
   display: flex;
   list-style: none;
   margin: 0;
-    & .header__menu-item:not(:last-child) {
-      margin-right: 75px;
-    }
+}
+
+.header__menu-item:not(:last-child) {
+  margin-right: 75px;
 }
 
 .header__menu-item {
-  & a {
+  a {
     text-decoration: none;
     color: #ffffff;
   }
 
   & :hover {
-    color: #dc0000;
-    border-bottom: 1px solid #dc0000;
+    color: $red;
   }
 
   & :active {
-    color: #660909;
-    border-bottom: 1px solid #660909;
+    color: #660909;;
   }
 }

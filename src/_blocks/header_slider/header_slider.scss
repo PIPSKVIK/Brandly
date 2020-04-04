@@ -1,0 +1,14 @@
+.header-slider__title-wrapper {
+  width: 1202px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-slider__button {
+  @include wrap;
+  text-align: center;
+}
+
+.header-slider {
+  background: url(../../img/_blocks/main_slider.png) no-repeat center top fixed;
+}
