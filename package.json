@@ -4,7 +4,7 @@
     "IE >= 11",
     "Firefox ESR"
   ],
-  "name": "Gulp_project",
+  "name": "gulp_project",
   "description": "Проект ...",
   "version": "0.1.0",
   "private": true,
