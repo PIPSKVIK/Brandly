@@ -1,3 +1,15 @@
+.header-slider {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(/img/main_slider.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .header-slider__title-wrapper {
   width: 1202px;
   margin: 0 auto;
@@ -9,6 +21,6 @@
   text-align: center;
 }
 
-.header-slider {
-  background: url(../../img/_blocks/main_slider.png) no-repeat center top fixed;
+.header-slider__title {
+  margin: 0;
 }

@@ -1,3 +1,8 @@
+.header-wrapper {
+  position: absolute;
+  width: 100%;
+}
+
 .header {
   @include wrap;
 
@@ -8,7 +13,8 @@
 
   display: flex;
   justify-content: space-between;
-  background-color: antiquewhite;
+  background-color: transparent;
+
 }
 
 .header__logo {
