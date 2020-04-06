@@ -1,6 +1,46 @@
 @mixin opensans {
   font-family: "Open Sans";
   font-size: 40px;
+  line-height: 0.8;
   font-style: italic;
 }
 
+@mixin redline-top {
+  content: "";
+  background-color: rgb(220, 0, 0);
+  position: absolute;
+  width: 113px;
+  height: 3px;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin redline-bottom {
+  content: "";
+  background-color: rgb(220, 0, 0);
+  position: absolute;
+  width: 113px;
+  height: 3px;
+  bottom: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin slider-button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: $bg;
+  border: none;
+  margin: 0 5px;
+  outline: none;
+
+  &:active {
+    border: 2px solid $bg;
+    box-sizing: content-box;
+    background-color: transparent;
+    margin: 0 3px;
+  }
+}

@@ -1,0 +1,149 @@
+.trending {
+  height: 100vh;
+  width: 100%;
+  background: url(../../img/trending/trending-background.jpg) no-repeat top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+//................................................................
+
+.trending__wrapper {
+  @include wrap;
+  margin-top: 92px;
+}
+
+.trending__title {
+  @include opensans;
+  text-align: center;
+  margin: 0 0 93px;
+  position: relative;
+
+  &::before {
+    @include redline-top;
+  }
+
+  &::after {
+    @include redline-bottom;
+  }
+}
+
+//................................................................
+
+.trending-slider__block-info {
+  margin-left: 19px;
+}
+
+.trending-slider {
+  display: flex;
+}
+
+.trending-slider__info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trending-slider__info-title {
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 700;
+  color: $red;
+  line-height: 1.2;
+  margin-top: 21px;
+}
+
+.trending-slider__info-text {
+  font-size: 18px;
+  font-family: "Lato";
+  color: rgb(119, 119, 119);
+  line-height: 1.389;
+  letter-spacing: 0.1em;
+
+  &--subtitle {
+    margin-top: 18px;
+  }
+
+  &--text {
+    margin-top: 47px;
+  }
+
+  &--tip {
+    margin-top: 25px;
+  }
+}
+
+//................................................................
+
+.trending-slider__button {
+  margin-left: 11px;
+  margin-top: 87px;
+
+  .trending-slider__button-type:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.trending-slider__button-wrapper {
+  display: flex;
+}
+
+.trending-slider__button-type {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid rgb(51, 51, 51);
+  color: rgb(51, 51, 51);
+  padding: 15px 0;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    border-color: rgb(220, 0, 0);
+  }
+
+  &:active {
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(51, 51, 51);
+    color: $bg;
+    outline: none;
+  }
+
+  &--size {
+    width: 70px;
+  }
+
+  &--active {
+    width: 170px;
+    text-transform: uppercase;
+  }
+}
+
+.trending-slider__button-action {
+  display: flex;
+  margin-top: 30px;
+}
+
+//................................................................
+.trending__button {
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.trending__button-element{
+  @include slider-button;
+  background-color: rgb(51, 51, 51);
+
+  &:active {
+    border: 2px solid rgb(51, 51, 51);
+  }
+}
+
+
