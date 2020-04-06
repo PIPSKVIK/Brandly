@@ -67,10 +67,11 @@
 }
 
 .promo-slider__button {
-  margin-bottom: 100px;
+  margin-bottom: 56px;
 }
 
 .promo-slider__button-item {
   @include slider-button;
+  margin: 0 3px;
 }
 
