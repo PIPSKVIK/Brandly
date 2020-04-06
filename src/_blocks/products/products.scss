@@ -1,0 +1,148 @@
+.products {
+  @include wrap;
+  @include opensans;
+  margin-top: 91px;
+  margin-bottom: 60px;
+}
+
+.products__title {
+  color: rgb(51, 51, 51);
+  line-height: 0.8;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  &::before {
+    content: "";
+    background-color: rgb(220, 0, 0);
+    position: absolute;
+    width: 113px;
+    height: 3px;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    background-color: rgb(220, 0, 0);
+    position: absolute;
+    width: 113px;
+    height: 3px;
+    top: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+//................................................................
+
+.products__list-type {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 92px 0 0;
+  padding: 0;
+}
+
+.products__list-item {
+  width: 370px;
+  height: 418px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 315px;
+    height: 355px;
+    border: 3px solid $bg;
+    z-index: 166;
+  }
+
+  &--men {
+    background: url(/img/products/men.jpg) no-repeat;
+  }
+
+  &--woman {
+    background: url(/img/products/woman.jpg) no-repeat;
+  }
+
+  &--watches {
+    background: url(/img/products/watchers.jpg) no-repeat;
+  }
+}
+
+.products__list-name {
+  margin: 0;
+  color: $bg;
+}
+
+//................................................................
+
+.products__list-info {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+.products__list-sentence {
+  width: 570px;
+  height: 418px;
+  background-color: salmon;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &--off {
+    background: url(/img/products/40_off.jpg) 0 0 no-repeat;
+  }
+
+  &--sale {
+    background: url(/img/products/mega_sale.jpg) 0 0 no-repeat;
+  }
+}
+
+.products__list-text {
+  font-family: "Lato";
+  font-size: 45px;
+  font-weight: 900;
+  color: $bg;
+  line-height: 1.2;
+  margin: 0;
+  font-style: normal;
+  position: relative;
+
+  &--off {
+    padding: 0 150px;
+  }
+
+  &--sale {
+    padding: 0 71px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 192px;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -11px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 192px;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+  }
+}
