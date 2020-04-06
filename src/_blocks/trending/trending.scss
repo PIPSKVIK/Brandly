@@ -1,7 +1,7 @@
 .trending {
   height: 100vh;
   width: 100%;
-  background: url(../../img/trending/trending-background.jpg) no-repeat top;
+  background: url(/img/trending/trending-background.jpg) no-repeat top;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,8 +96,8 @@
   line-height: 1.2;
   background-color: transparent;
   text-align: center;
-  border: 1px solid rgb(51, 51, 51);
-  color: rgb(51, 51, 51);
+  border: 1px solid $dark;
+  color: $dark;
   padding: 15px 0;
   cursor: pointer;
   outline: none;
@@ -107,8 +107,8 @@
   }
 
   &:active {
-    background-color: rgb(51, 51, 51);
-    border-color: rgb(51, 51, 51);
+    background-color: $dark;
+    border-color: $dark;
     color: $bg;
     outline: none;
   }
@@ -139,10 +139,10 @@
 
 .trending__button-element{
   @include slider-button;
-  background-color: rgb(51, 51, 51);
+  background-color: $dark;
 
   &:active {
-    border: 2px solid rgb(51, 51, 51);
+    border: 2px solid $dark;
   }
 }
 
