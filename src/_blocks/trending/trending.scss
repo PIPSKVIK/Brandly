@@ -65,6 +65,17 @@
 
   &--subtitle {
     margin-top: 18px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: "";
+      background-color: rgb(0, 0, 0);
+      width: 30px;
+      height: 1px;
+      left: 0;
+      bottom: -25px;
+    }
   }
 
   &--text {
