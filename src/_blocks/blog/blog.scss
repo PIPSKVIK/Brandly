@@ -71,6 +71,8 @@
   margin-top: 22px;
 }
 
+
+
 .blog-slider__item-subtitle {
   font-family: "Lato";
   font-size: 16px;
@@ -85,6 +87,27 @@ font-size: 18px;
 color: rgba(51, 51, 51, 0.6);
 line-height: 1.333;
 margin-top: 53px;
+position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    background-color: rgb(236, 240, 241);
+    width: 570px;
+    height: 1px;
+    top: -30px;
+    left: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    background-color: rgb(236, 240, 241);
+    width: 570px;
+    height: 1px;
+    bottom: -32px;
+    left: 0;
+  }
 }
 
 .blog-slider__item-button {
