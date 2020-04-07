@@ -5,24 +5,13 @@
   font-style: italic;
 }
 
-@mixin redline-top {
+@mixin redline {
   content: "";
   background-color: rgb(220, 0, 0);
   position: absolute;
   width: 113px;
   height: 3px;
   top: -32px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-@mixin redline-bottom {
-  content: "";
-  background-color: rgb(220, 0, 0);
-  position: absolute;
-  width: 113px;
-  height: 3px;
-  bottom: -33px;
   left: 50%;
   transform: translateX(-50%);
 }

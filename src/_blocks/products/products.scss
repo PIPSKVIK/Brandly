@@ -12,11 +12,12 @@
   position: relative;
   margin: 0;
   &::before {
-    @include redline-top;
+    @include redline;
   }
 
   &::after {
-    @include redline-bottom;
+    @include redline;
+    top: 63px;
   }
 }
 

@@ -1,7 +1,8 @@
 .trending {
-  height: 100vh;
+  min-height: 918px;
   width: 100%;
   background: url(/img/trending/trending-background.jpg) no-repeat top;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -21,11 +22,12 @@
   position: relative;
 
   &::before {
-    @include redline-top;
+    @include redline;
   }
 
   &::after {
-    @include redline-bottom;
+    @include redline;
+    top: 63px;
   }
 }
 

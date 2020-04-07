@@ -1,0 +1,115 @@
+.blog {
+  @include wrap;
+  margin-top: 92px;
+  position: relative;
+  margin-bottom: 76px;
+}
+
+.blog-slider {
+  position: relative;
+}
+
+.blog__title {
+  @include opensans;
+  font-weight: 300;
+  color: $dark;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  &::before {
+    @include redline;
+  }
+
+  &::after {
+    @include redline;
+    top: 63px;
+  }
+}
+
+.blog-slider__button {
+  position: absolute;
+  padding: 0;
+  border: none;
+  background: 0 0;
+  outline: none;
+  cursor: pointer;
+  bottom: 50%;
+  transform: translateY(-50%);
+
+}
+
+.blog-slider__button-left {
+  left: -130px;
+}
+
+.blog-slider__button-right {
+  right: -130px;
+}
+//................................................................
+
+.blog-slider {
+  display: flex;
+  margin-top: 100px;
+}
+
+.blog-slider__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog-slider__item-first {
+  margin-right: 30px;
+}
+
+.blog-slider__item-title {
+  font-family: "Lato";
+  font-size: 30px;
+  color: $red;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 22px;
+}
+
+.blog-slider__item-subtitle {
+  font-family: "Lato";
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.8);
+  line-height: 1.875;
+  margin-top: 17px;
+}
+
+.blog-slider__item-text {
+font-family: "Open Sans";
+font-size: 18px;
+color: rgba(51, 51, 51, 0.6);
+line-height: 1.333;
+margin-top: 53px;
+}
+
+.blog-slider__item-button {
+  margin-top: 79px;
+
+  & a {
+    font-family: "Open Sans";
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $dark;
+    border: 1px solid $dark;
+    padding: 14px 37px;
+
+    &:hover {
+      border-color: rgb(220, 0, 0);
+    }
+
+    &:active {
+      background-color: $dark;
+      border-color: $dark;
+      color: $bg;
+      outline: none;
+    }
+  }
+}
+

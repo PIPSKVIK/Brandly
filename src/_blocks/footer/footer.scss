@@ -1,3 +1,15 @@
 .footer {
+  @include wrap;
+  text-align: center;
+  margin-top: 67px;
+  margin-bottom: 71px;
+}
+
+.footer-text {
+  font-family: "Lato";
+  font-size: 18px;
+  line-height: 1.333;
+  color: rgba(51, 51, 51, 0.6);
+  font-weight: 400;
 
 }
