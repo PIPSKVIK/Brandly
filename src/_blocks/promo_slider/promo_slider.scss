@@ -1,24 +1,19 @@
 .promo-slider {
   height: 100vh;
-  width: 100%;
-  margin: 0 auto;
   background: url(/img/promo_slider/main_slider.png) no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .promo-slider__title-wrapper {
-  width: 1205px;
-  margin: 0 auto;
   text-align: center;
   color: $bg;
-  margin-top: 310px;
 }
 
 .promo-slider__button {
-  @include wrap;
+  text-align: center;
 }
 
 .promo-slider__title {
@@ -57,7 +52,9 @@
   text-decoration: none;
   color: $bg;
   border: 2px solid $bg;
-  padding: 20px 48px 20px 48px;
+  display: inline-block;
+  min-width: 200px;
+  padding: 18px 0;
   border-radius: 2px;
     &:hover {
       transition: 0.6s;
@@ -66,12 +63,7 @@
     }
 }
 
-.promo-slider__button {
-  margin-bottom: 56px;
-}
-
 .promo-slider__button-item {
   @include slider-button;
   margin: 0 3px;
 }
-

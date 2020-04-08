@@ -1,8 +1,8 @@
 .blog {
   @include wrap;
-  margin-top: 92px;
+  margin-top: 57px;
   position: relative;
-  margin-bottom: 76px;
+  margin-bottom: 61px;
 }
 
 .blog-slider {
@@ -16,13 +16,16 @@
   text-align: center;
   position: relative;
   margin: 0;
+  padding: 31px 0;
+
   &::before {
     @include redline;
+    top: 0;
   }
 
   &::after {
     @include redline;
-    top: 63px;
+    bottom: 0;
   }
 }
 
@@ -49,13 +52,11 @@
 
 .blog-slider {
   display: flex;
-  margin-top: 100px;
+  margin-top: 68px;
 }
 
 .blog-slider__item {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  width: 50%;
 }
 
 .blog-slider__item-first {
@@ -68,17 +69,15 @@
   color: $red;
   font-weight: 700;
   line-height: 1;
-  margin-top: 22px;
+  margin:22px 0 0;
 }
-
-
 
 .blog-slider__item-subtitle {
   font-family: "Lato";
   font-size: 16px;
   color: rgba(51, 51, 51, 0.8);
   line-height: 1.875;
-  margin-top: 17px;
+  margin: 17px 0 0;
 }
 
 .blog-slider__item-text {
@@ -86,8 +85,9 @@ font-family: "Open Sans";
 font-size: 18px;
 color: rgba(51, 51, 51, 0.6);
 line-height: 1.333;
-margin-top: 53px;
 position: relative;
+margin: 21px 0 0;
+padding: 31px 0;
 
   &:before {
     position: absolute;
@@ -95,7 +95,7 @@ position: relative;
     background-color: rgb(236, 240, 241);
     width: 570px;
     height: 1px;
-    top: -30px;
+    top: 0;
     left: 0;
   }
 
@@ -105,13 +105,13 @@ position: relative;
     background-color: rgb(236, 240, 241);
     width: 570px;
     height: 1px;
-    bottom: -32px;
+    bottom: 0;
     left: 0;
   }
 }
 
 .blog-slider__item-button {
-  margin-top: 79px;
+  margin: 34px 0 0;
 
   & a {
     font-family: "Open Sans";
@@ -121,7 +121,10 @@ position: relative;
     line-height: 1.2;
     color: $dark;
     border: 1px solid $dark;
-    padding: 14px 37px;
+    display: inline-block;
+    min-width: 170px;
+    padding: 14px 0;
+    text-align: center;
 
     &:hover {
       border-color: rgb(220, 0, 0);
