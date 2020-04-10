@@ -32,40 +32,66 @@
 .products__list-type {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .products__list-item {
-  width: 370px;
+  width: 33.33333%;
   height: 418px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 85%;
-    height: 85%;
-    border: 3px solid $bg;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 30px;
-  }
+    + .products__list-item {
+      margin-left: 20px;
+    }
 
   &--men {
-    background: url(/img/products/men.jpg) no-repeat;
+    background: url(/img/products/men.jpg) no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 85%;
+      height: 85%;
+      border: 3px solid $bg;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   &--woman {
-    background: url(/img/products/woman.jpg) no-repeat;
+    background: url(/img/products/woman.jpg) no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 85%;
+      height: 85%;
+      border: 3px solid $bg;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   &--watches {
-    background: url(/img/products/watchers.jpg) no-repeat;
+    background: url(/img/products/watchers.jpg) no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 85%;
+      height: 85%;
+      border: 3px solid $bg;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -79,24 +105,26 @@
 .products__list-info {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   margin: 30px 0 0;
   padding: 0;
 }
 
 .products__list-sentence {
-  width: 570px;
+  width: 50%;
   height: 418px;
   display: flex;
   align-items: center;
   text-align: center;
 
   &--off {
-    background: url(/img/products/40_off.jpg) 0 0 no-repeat;
+    background: url(/img/products/40_off.jpg) no-repeat center top;
+    background-size: cover;
+    margin-right: 20px;
   }
 
   &--sale {
-    background: url(/img/products/mega_sale.jpg) 0 0 no-repeat;
+    background: url(/img/products/mega_sale.jpg) no-repeat center top;
+    background-size: cover;
   }
 }
 
@@ -111,7 +139,7 @@
   position: relative;
 
   &--off {
-    padding: 12px 150px;
+    padding: 12px 50px;
   }
 
   &--sale {
@@ -138,5 +166,63 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+  }
+}
+
+@media (max-width: $tablet) {
+  .products {
+    padding: 0 20px;
+
+    &__title {
+      font-size: 30px;
+
+      &::after {
+        width: 80px;
+      }
+
+      &::before {
+        width: 80px;
+      }
+    }
+  }
+
+  .products__list-name {
+    font-size: 30px;
+  }
+
+  .products__list-item {
+    width: 33.3333%;
+    height: 310px;
+  }
+
+  .products__list-sentence {
+    height: 310px;
+  }
+
+  .products__list-text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .products__list-name {
+    font-size: 20px;
+  }
+
+  .products__list-text {
+    font-size: 25px;
+
+    &--off {
+      padding: 10px 20px;
+    }
+
+    &--sale {
+      padding: 10px 20px;
+    }
+  }
+
+  .products__title {
+    font-size: 25px;
+    padding: 15px 0;
   }
 }
