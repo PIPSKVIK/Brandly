@@ -167,9 +167,10 @@
 
 //................................................................
 .trending__button {
-  margin-top: 47px;
-  text-align: center;
-  display: block;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .trending__button-element{
@@ -177,8 +178,8 @@
   background-color: $dark;
 
   &:active {
-    border: 2px solid $dark;
-    margin: 0 3px;
+    border: 2px solid $red;
+    margin: 0 5px;
   }
 }
 

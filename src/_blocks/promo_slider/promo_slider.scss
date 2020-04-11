@@ -4,16 +4,32 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+
+  &__title-second {
+    display: none;
+  }
+  
+  &__title-third {
+      display: none;
+    }
+
+  &__title-fourth {
+    display: none;
+  }
 }
 
 .promo-slider__title-wrapper {
   text-align: center;
   color: $bg;
+  margin: auto;
 }
 
 .promo-slider__button {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .promo-slider__title {
@@ -65,7 +81,6 @@
 
 .promo-slider__button-item {
   @include slider-button;
-  margin: 0 3px;
 }
 
 @media (max-width: $tablet) {
@@ -99,19 +114,23 @@
     background-size: cover;
     height: 372px;
 
+    &__title-wrapper {
+      padding: 0 20%;
+    }
+
     &__title {
       font-size: 16px;
-      margin: 0;
+      margin-bottom: 20px;
     }
 
     &__title-discount {
       font-size: 30px;
-      margin: 0;
+      margin-bottom: 20px;
     }
 
     &__title-tagline {
       font-size: 14px;
-      margin: 0;
+      margin-bottom: 20px;
     }
 
     &__title-shop {
