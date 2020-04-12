@@ -172,17 +172,17 @@
 @media (max-width: $tablet) {
   .products {
     padding: 0 20px;
+  }
 
-    &__title {
-      font-size: 30px;
+  .products__title {
+    font-size: 30px;
 
-      &::after {
-        width: 80px;
-      }
+    &::after {
+      width: 80px;
+    }
 
-      &::before {
-        width: 80px;
-      }
+    &::before {
+      width: 80px;
     }
   }
 

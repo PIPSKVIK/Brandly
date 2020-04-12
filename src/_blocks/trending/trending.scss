@@ -39,27 +39,28 @@
 .trending-slider {
   display: flex;
   margin-top: 62px;
-
-  &__second {
-    display: none;
-  }
-
-  &__third {
-    display: none;
-  }
-
-  &__fourth {
-    display: none;
-  }
-
-  &__foto {
-    width: 570px;
-  }
-
-  &__block-info {
-    width: 570px;
-  }
 }
+
+.trending-slider__second {
+  display: none;
+}
+
+.trending-slider__third {
+  display: none;
+}
+
+.trending-slider__fourth {
+  display: none;
+}
+
+.trending-slider__foto {
+  width: 570px;
+}
+
+.trending-slider__block-info {
+  width: 570px;
+}
+
 
 .trending-slider__info {
   list-style: none;
@@ -191,32 +192,32 @@
   .trending-slider {
     flex-direction: column;
     align-items: center;
+  }
 
-    &__info-title {
-      font-size: 25px;
-    }
+  .trending-slider__info-title {
+    font-size: 25px;
+  }
 
-    &__block-info {
-      margin-left: 0;
-      text-align: center;
-    }
+  .trending-slider__block-info {
+    margin-left: 0;
+    text-align: center;
+  }
 
-    &__info-collection::after {
-      left: 50%;
-      transform: translateX(-50%);
-      width: 50%;
-    }
+  .trending-slider__info-collection::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
 
-    &__button {
-      margin: 0;
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
+  .trending-slider__button {
+    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    &__button-action {
-      margin-bottom: 20px;
-    }
+  .trending-slider__button-action {
+    margin-bottom: 20px;
   }
 
   .trending__title {
@@ -225,37 +226,35 @@
 }
 
 @media (max-width: $mobile) {
-  .trending-slider {
 
-    &__foto {
-      width: 100%;
-      text-align: center;
+  .trending-slider__block-info {
+    width: 100%;
+  }
 
-        & img {
-          width: 100%;
-          height: auto;
-        }
-    }
+  .trending-slider__info-title {
+    font-size: 20px;
+  }
 
-    &__block-info {
-      width: 100%;
-    }
+  .trending-slider__info-collection {
+    font-size: 13px;
+  }
 
-    &__info-title {
-      font-size: 20px;
-    }
+  .trending-slider__info-description {
+    font-size: 13px;
+  }
 
-    &__info-collection {
-      font-size: 13px;
-    }
+  .trending-slider__info-advice {
+    font-size: 13px;
+  }
 
-    &__info-description {
-      font-size: 13px;
-    }
+  .trending-slider__foto {
+    width: 100%;
+    text-align: center;
 
-    &__info-advice {
-      font-size: 13px;
-    }
+      & img {
+        width: 100%;
+        height: auto;
+      }
   }
 
   .trending__title {
