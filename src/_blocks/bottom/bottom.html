@@ -23,11 +23,8 @@
         }
       ]
     });
-  });
-</script>
 
-<script>
-  $(document).ready(function() {
+
     $('.trending-slider__slick').slick({
       infinite: true,
       dots: true,
@@ -47,5 +44,16 @@
         }
       ]
     });
+
+
+    $('.blog-slider').slick({
+      infinite: true,
+      dots: false,
+      speed: 700,
+      slidesToShow: 2,
+      slidesToScroll: 2
+    });
+
+    $('article.slick-initialized').css('flexDirection', 'column');
   });
 </script>
