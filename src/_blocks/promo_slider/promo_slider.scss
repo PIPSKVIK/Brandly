@@ -1,6 +1,33 @@
-.promo-slider {
+.promo-slider__wrapper {
   height: 100vh;
-  background: url(/img/promo_slider/main_slider.png) no-repeat center top;
+  background: url(/img/promo_slider/promo_slider_woman.png) no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.promo-slider__wrapper-first {
+  height: 100vh;
+  background: url(/img/promo_slider/promo_slider_woman1.jpg) no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.promo-slider__wrapper-second {
+  height: 100vh;
+  background: url(/img/promo_slider/promo_slider_woman2.jpg) no-repeat center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.promo-slider__wrapper-third {
+  height: 100vh;
+  background: url(/img/promo_slider/promo_slider_woman3.jpg) no-repeat center top;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -82,10 +109,47 @@
 .promo-slider__button-item {
   @include slider-button;
 }
+//***********************************************
+.promo-slider__dots {
+  position: absolute;
+  bottom: 25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
 
+.promo-slider__dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.promo-slider__dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: $bg;
+  border: none;
+  margin: 0 5px;
+  outline: none;
+}
+
+.promo-slider__dots li.slick-active button {
+  border: 2px solid $bg;
+  background-color: transparent;
+  margin: 0 5px;
+}
+//------------------------------------------------
 @media (max-width: $tablet) {
-  .promo-slider {
-    background: url(/img/promo_slider/main_slider_tablet.png) no-repeat center top;
+  .promo-slider__wrapper {
     height: 480px;
   }
 
@@ -106,12 +170,21 @@
     font-size: 13px;
     padding: 14px 0;
   }
+
+  .promo-slider__dots li button {
+    width: 8px;
+    height: 8px;
+  }
+
+  .promo-slider__dots li.slick-active button {
+    margin: 0 2px;
+  }
+
+
 }
 
 @media (max-width: $mobile) {
-  .promo-slider {
-    background: url(/img/promo_slider/main_slider_mobile.png) no-repeat center top;
-    background-size: cover;
+  .promo-slider__wrapper {
     height: 372px;
   }
 
