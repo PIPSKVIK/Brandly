@@ -7,7 +7,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: false,
     dotsClass: "promo-slider__dots",
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
     responsive: [
       {
@@ -18,4 +18,4 @@ $(document).ready(function() {
       }
     ]
   });
-});
+

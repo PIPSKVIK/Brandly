@@ -1,49 +1,27 @@
+
 .promo-slider__wrapper {
   height: 100vh;
-  background: url(/img/promo_slider/promo_slider_woman.png) no-repeat center top;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
 }
 
-.promo-slider__wrapper-first {
+.promo-slider__image img {
   height: 100vh;
-  background: url(/img/promo_slider/promo_slider_woman1.jpg) no-repeat center top;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
 }
 
-.promo-slider__wrapper-second {
-  height: 100vh;
-  background: url(/img/promo_slider/promo_slider_woman2.jpg) no-repeat center top;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
 
-.promo-slider__wrapper-third {
-  height: 100vh;
-  background: url(/img/promo_slider/promo_slider_woman3.jpg) no-repeat center top;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.promo-slider__title-second {
-  display: none;
-}
-
-.promo-slider__title-third {
-    display: none;
-  }
-
-.promo-slider__title-fourth {
-  display: none;
+.promo-slider__title-wrapper {
+  z-index: 123;
 }
 
 .promo-slider__title-wrapper {
@@ -118,6 +96,7 @@
   padding: 0;
   list-style: none;
   text-align: center;
+  z-index: 1;
 }
 
 .promo-slider__dots li {
@@ -149,6 +128,7 @@
 }
 //------------------------------------------------
 @media (max-width: $tablet) {
+
   .promo-slider__wrapper {
     height: 480px;
   }
